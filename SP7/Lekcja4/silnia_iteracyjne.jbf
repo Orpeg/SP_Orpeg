@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><JavaBlocks author="wbalc" scriptEngine="JavaScript" version="6010">
+  <option fullConnectorValues="true" grid="false" pascal="false"/>
+  <flowchart name="Start">
+    <canvas interval="200" posX="75.07869" posY="130.0" zoom="4"/>
+    <blocks>
+      <block id="0" name="Start" type="START">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="-390.0"/>
+        <comment>Start</comment>
+        <connect ID="2"/>
+      </block>
+      <block id="1" type="RETURN">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="110.0"/>
+        <comment>End</comment>
+      </block>
+      <block id="2" type="IO">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="-320.0"/>
+        <content>n = ReadNumber("Podaj liczbę N")</content>
+        <connect ID="6"/>
+      </block>
+      <block id="3" type="DECISION">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="-100.0"/>
+        <content>i&lt;=n</content>
+        <connect ID="4" value="true"/>
+        <connect ID="5" value="false"/>
+      </block>
+      <block id="4" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-250.0" posY="-100.0"/>
+        <content>wynik = wynik*i;	i= i+1;</content>
+        <connect ID="7"/>
+      </block>
+      <block id="5" type="IO">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="20.0"/>
+        <content>Writeln("Silnia liczby N = "+n+" wynosi "+wynik)&#13;;	</content>
+        <connect ID="1"/>
+      </block>
+      <block id="6" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="-240.0"/>
+        <content>wynik = 1;&#13;;	i = 1;</content>
+        <connect ID="8"/>
+      </block>
+      <block id="7" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-250.0" posY="-180.0"/>
+        <content> </content>
+        <connect ID="8"/>
+      </block>
+      <block id="8" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="-180.0"/>
+        <content> </content>
+        <connect ID="3"/>
+      </block>
+    </blocks>
+  </flowchart>
+</JavaBlocks>

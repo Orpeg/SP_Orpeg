@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><JavaBlocks author="wojciech" scriptEngine="JavaScript" version="6010">
+  <option fullConnectorValues="true" grid="false" pascal="false"/>
+  <flowchart name="Start">
+    <canvas interval="200" posX="0.0" posY="0.0" zoom="4"/>
+    <blocks>
+      <block id="0" name="Start" type="START">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="-232.5" posY="-330.0"/>
+        <comment>Start</comment>
+        <connect ID="2"/>
+      </block>
+      <block id="1" type="RETURN">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="-232.5" posY="100.0"/>
+        <comment>End</comment>
+      </block>
+      <block id="2" type="IO">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-232.5" posY="-180.0"/>
+        <content>var n = ReadNumber("Podaj liczbę n = ");&#13;;	Writeln("wprowadziłeś liczbę n="+n)</content>
+        <connect ID="3"/>
+      </block>
+      <block id="3" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-230.0" posY="-40.0"/>
+        <content>if (n%2==0){&#13;;	    Writeln ("liczba n jest parzysta")&#13;;	    } else {&#13;;	        Writeln("liczba n jest nieparzysta")&#13;;	        &#13;;	        }</content>
+        <connect ID="1"/>
+      </block>
+    </blocks>
+  </flowchart>
+</JavaBlocks>

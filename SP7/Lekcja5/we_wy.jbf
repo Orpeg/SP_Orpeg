@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><JavaBlocks author="Wojciech" scriptEngine="JavaScript" version="6010">
+  <option fullConnectorValues="true" grid="false" pascal="false"/>
+  <flowchart name="Start">
+    <canvas interval="200" posX="110.708336" posY="80.0" zoom="5"/>
+    <blocks>
+      <block id="1" name="Start" type="START">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="-380.0"/>
+        <comment>Start</comment>
+        <connect ID="3"/>
+      </block>
+      <block id="2" type="RETURN">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="170.0"/>
+        <comment>End</comment>
+      </block>
+      <block id="3" type="IO">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="-310.0"/>
+        <content>a = ReadNumber("Podaj liczbe calkowita");	Writeln("podales liczba a = "+a)</content>
+        <connect ID="12"/>
+      </block>
+      <block id="4" type="IO">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="-200.0"/>
+        <content>b=ReadNumber("Podaj liczbą ujemną b");	;	</content>
+        <comment>"Podaj liczbą ujemną b";	b ;	</comment>
+        <connect ID="9"/>
+        <io array="0" inputType="0" ioType="2" message="Podaj liczbą ujemną b" variable="b"/>
+      </block>
+      <block id="6" type="IO">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="-50.0"/>
+        <content>Writeln("Podales liczbe b = " + (getValueOf(b)));	;	</content>
+        <comment>"Podales liczbe b = " +b</comment>
+        <connect ID="7"/>
+        <io ioType="1" message="Podales liczbe b = " messageSuffix="" newLine="true" variable="b"/>
+      </block>
+      <block id="7" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="20.0"/>
+        <content>suma = a+b</content>
+        <connect ID="8"/>
+      </block>
+      <block id="8" type="IO">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="100.0"/>
+        <content>Writeln("suma liczba a+b =" + (getValueOf(suma)));	;	</content>
+        <comment>"suma liczba a+b =" +suma</comment>
+        <connect ID="2"/>
+        <io ioType="1" message="suma liczba a+b =" messageSuffix="" newLine="true" variable="suma"/>
+      </block>
+      <block id="9" type="DECISION">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="-130.0"/>
+        <content>b&lt;0</content>
+        <connect ID="6" value="true"/>
+        <connect ID="10" value="false"/>
+      </block>
+      <block id="10" type="IO">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="340.0" posY="-130.0"/>
+        <content>Writeln("podaj liczbę ujemna")</content>
+        <connect ID="11"/>
+      </block>
+      <block id="11" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="340.0" posY="-250.0"/>
+        <content> </content>
+        <connect ID="12"/>
+      </block>
+      <block id="12" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="-260.0"/>
+        <content> </content>
+        <connect ID="4"/>
+      </block>
+    </blocks>
+  </flowchart>
+</JavaBlocks>

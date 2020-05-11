@@ -1,0 +1,1 @@
+print ("Dzień dobry klasa 7")

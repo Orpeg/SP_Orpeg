@@ -1,0 +1,16 @@
+body{
+	/*font-family: sans-serif;*/
+	font-size: 1.5em;
+	color: #303030FF;
+	font-family: 'Sansita Swashed', cursive;
+
+}
+
+.baner{
+	font-family: sans-serif;
+	color: red;
+	border-radius: 25px;
+	padding: 40px;
+	border: solid 2px green;
+	background-color: #D8D8D8FF;
+}

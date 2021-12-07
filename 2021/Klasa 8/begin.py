@@ -16,6 +16,6 @@ print('Liczba pi = ', pi)
 
 print('Powierzchnia koła o promieniu 3 wynosi ',end=' ' )
 r = 3
-pole = pi * r * 4
+pole = pi * r * r
 
 print(pole)

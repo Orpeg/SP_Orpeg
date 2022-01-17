@@ -1,0 +1,24 @@
+body{
+
+	font-family: Arial;
+	color: #101010;
+	background: #b29696;
+}
+
+.miesiace{
+
+	font-size: 1.1em;
+	color: #3b1212;
+	font-family: Tahoma;
+	width: 40%;
+	float: left;
+}
+
+.dow{
+
+	font-size: 0.9em;
+	color: #000000;
+	width: 40%;
+	float: left;
+
+}
